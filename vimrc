@@ -18,8 +18,9 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" required!
+
+Plugin 'VundleVim/Vundle.vim'
 
 Bundle 'snipMate'
 Bundle 'L9'
@@ -47,6 +48,9 @@ Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'tpope/vim-fugitive'
 Bundle 'klen/python-mode'
 
+Plugin 'git://git.wincent.com/command-t.git'
+
+
 filetype plugin indent on     " required!
 
 "====================================================
@@ -65,10 +69,19 @@ set hlsearch			" Highlight Search
 set ts=4			" tab stop - tab 크기
 set sw=4			" shift width - shift 크기 조절
 set sts=4			" soft tab stop - tab 이동 크기
+set showmatch
+set backspace=eol,start,indent
+set autoindent
+set smartindent
+set nowrapscan
 set expandtab
+set tabstop=4
+set shiftwidth=4
 set incsearch
 set printoptions=portrait:n,wrap:n,duplex:off
 set fileencodings=utf-8,euc-kr
+set encoding=utf-8
+set list
 colorscheme desert
 
 "==========================
